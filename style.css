@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    text-align: center;
+    font-size: 16px;
+}
+h1 {
+    color:hsl(150, 100%, 66%);
+    padding: 1.5rem 0 1.5rem 0;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: hsl(193, 38%, 86%);
+}
+picture img{
+    margin-bottom: 1rem;
+}
+.card {
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 24%);
+    padding: 1.25rem 1.25rem 2rem;;
+}
+.dice button {
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3 ease-in-out;
+    cursor:pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dice button:hover {
+    background-color: hsl(150, 53%, 44%);
+    box-shadow: inset 0 0 1em 0 hsl(150, 100%, 66%), 0 0 1em 0 hsl(150, 100%, 66%);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 3rem;
+    color: hsl(193, 38%, 86%);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width:500px){
+    .card {
+        max-width: 480px;
+    }
+}
